@@ -8,6 +8,6 @@
 import Foundation
 
 struct ImagesURL: Decodable {
-    let small: String
-    let thumb: String
+    let small: String?
+    let thumb: String?
 }

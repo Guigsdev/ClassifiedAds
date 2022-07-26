@@ -7,10 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		456BA357288B5DED006AE9A4 /* ViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456BA356288B5DED006AE9A4 /* ViewState.swift */; };
+		456BA35A288B5F3A006AE9A4 /* ProgressShapeLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456BA359288B5F39006AE9A4 /* ProgressShapeLayer.swift */; };
+		456BA35C288B5F48006AE9A4 /* ProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456BA35B288B5F48006AE9A4 /* ProgressView.swift */; };
+		456BA35E288B5F57006AE9A4 /* RotationAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456BA35D288B5F57006AE9A4 /* RotationAnimation.swift */; };
+		456BA360288B5F68006AE9A4 /* StrokeAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456BA35F288B5F68006AE9A4 /* StrokeAnimation.swift */; };
+		456BA362288B5F78006AE9A4 /* StrokeColorAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456BA361288B5F78006AE9A4 /* StrokeColorAnimation.swift */; };
+		456BA365288B6126006AE9A4 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456BA364288B6126006AE9A4 /* UIView+Extension.swift */; };
+		456BA367288B6251006AE9A4 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456BA366288B6251006AE9A4 /* LoadingView.swift */; };
+		4591D4F8288CB28F00C1B908 /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4591D4F7288CB28F00C1B908 /* UIColor+Extensions.swift */; };
+		4591D4FA288CB71300C1B908 /* CellReusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4591D4F9288CB71300C1B908 /* CellReusable.swift */; };
+		4591D502288CD1AF00C1B908 /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4591D501288CD1AF00C1B908 /* ImageLoader.swift */; };
+		45AA7EED288E9F4700C41F17 /* FilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45AA7EEC288E9F4700C41F17 /* FilterViewController.swift */; };
+		45AA7EEF288F6E7100C41F17 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45AA7EEE288F6E7100C41F17 /* Constants.swift */; };
+		45AA7EF2288F6F2A00C41F17 /* ClassifiedAdDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45AA7EF1288F6F2A00C41F17 /* ClassifiedAdDetailViewController.swift */; };
+		45AA7EF4288F6F9200C41F17 /* ClassifiedAdDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45AA7EF3288F6F9200C41F17 /* ClassifiedAdDetailViewModel.swift */; };
 		45B540EA2885EBCE00DF6801 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45B540E92885EBCE00DF6801 /* AppDelegate.swift */; };
 		45B540EC2885EBCE00DF6801 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45B540EB2885EBCE00DF6801 /* SceneDelegate.swift */; };
-		45B540EE2885EBCE00DF6801 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45B540ED2885EBCE00DF6801 /* ViewController.swift */; };
-		45B540F12885EBCE00DF6801 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45B540EF2885EBCE00DF6801 /* Main.storyboard */; };
 		45B540F32885EBD000DF6801 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45B540F22885EBD000DF6801 /* Assets.xcassets */; };
 		45B540F62885EBD000DF6801 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45B540F42885EBD000DF6801 /* LaunchScreen.storyboard */; };
 		45B541012885EBD100DF6801 /* ClassifiedAdsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45B541002885EBD100DF6801 /* ClassifiedAdsTests.swift */; };
@@ -19,6 +32,19 @@
 		45B541202885F5F000DF6801 /* ClassifiedAd.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45B5411F2885F5F000DF6801 /* ClassifiedAd.swift */; };
 		45B541222885F85800DF6801 /* ImagesURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45B541212885F85800DF6801 /* ImagesURL.swift */; };
 		45B541242885F87000DF6801 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45B541232885F87000DF6801 /* Category.swift */; };
+		45BDA8F3288B0A2F0062CB08 /* ClassifiedAdEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45BDA8F2288B0A2F0062CB08 /* ClassifiedAdEndpoint.swift */; };
+		45BDA8F5288B0BA10062CB08 /* ClassifiedAdAPIServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45BDA8F4288B0BA10062CB08 /* ClassifiedAdAPIServiceProtocol.swift */; };
+		45BDA8F7288B0C680062CB08 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45BDA8F6288B0C680062CB08 /* Coordinator.swift */; };
+		45BDA8F9288B0D070062CB08 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45BDA8F8288B0D070062CB08 /* MainCoordinator.swift */; };
+		45BDA8FC288B0D650062CB08 /* ClassifiedAdViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45BDA8FB288B0D650062CB08 /* ClassifiedAdViewModel.swift */; };
+		45BDA8FE288B0D730062CB08 /* ClassifiedAdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45BDA8FD288B0D730062CB08 /* ClassifiedAdViewController.swift */; };
+		45BDA900288B0D830062CB08 /* ClassifiedAdTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45BDA8FF288B0D830062CB08 /* ClassifiedAdTableViewCell.swift */; };
+		45BDA903288B0DFC0062CB08 /* ClassifiedAdDataRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45BDA902288B0DFC0062CB08 /* ClassifiedAdDataRepository.swift */; };
+		45D2A71E2888794700F178DA /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D2A71D2888794700F178DA /* Endpoint.swift */; };
+		45D2A72028887C8E00F178DA /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D2A71F28887C8E00F178DA /* APIClient.swift */; };
+		45D2A72728888A5B00F178DA /* ClassifiedAdRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D2A72628888A5B00F178DA /* ClassifiedAdRepository.swift */; };
+		45D2A72928888B0A00F178DA /* FetchItemsUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D2A72828888B0A00F178DA /* FetchItemsUseCase.swift */; };
+		45D2A72B28888B1600F178DA /* FetchCategoryUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D2A72A28888B1600F178DA /* FetchCategoryUseCase.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,11 +65,24 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		456BA356288B5DED006AE9A4 /* ViewState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewState.swift; sourceTree = "<group>"; };
+		456BA359288B5F39006AE9A4 /* ProgressShapeLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressShapeLayer.swift; sourceTree = "<group>"; };
+		456BA35B288B5F48006AE9A4 /* ProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressView.swift; sourceTree = "<group>"; };
+		456BA35D288B5F57006AE9A4 /* RotationAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RotationAnimation.swift; sourceTree = "<group>"; };
+		456BA35F288B5F68006AE9A4 /* StrokeAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrokeAnimation.swift; sourceTree = "<group>"; };
+		456BA361288B5F78006AE9A4 /* StrokeColorAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrokeColorAnimation.swift; sourceTree = "<group>"; };
+		456BA364288B6126006AE9A4 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		456BA366288B6251006AE9A4 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		4591D4F7288CB28F00C1B908 /* UIColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
+		4591D4F9288CB71300C1B908 /* CellReusable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellReusable.swift; sourceTree = "<group>"; };
+		4591D501288CD1AF00C1B908 /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
+		45AA7EEC288E9F4700C41F17 /* FilterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterViewController.swift; sourceTree = "<group>"; };
+		45AA7EEE288F6E7100C41F17 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		45AA7EF1288F6F2A00C41F17 /* ClassifiedAdDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassifiedAdDetailViewController.swift; sourceTree = "<group>"; };
+		45AA7EF3288F6F9200C41F17 /* ClassifiedAdDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassifiedAdDetailViewModel.swift; sourceTree = "<group>"; };
 		45B540E62885EBCE00DF6801 /* ClassifiedAds.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClassifiedAds.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		45B540E92885EBCE00DF6801 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		45B540EB2885EBCE00DF6801 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		45B540ED2885EBCE00DF6801 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		45B540F02885EBCE00DF6801 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		45B540F22885EBD000DF6801 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		45B540F52885EBD000DF6801 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		45B540F72885EBD000DF6801 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -55,6 +94,19 @@
 		45B5411F2885F5F000DF6801 /* ClassifiedAd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassifiedAd.swift; sourceTree = "<group>"; };
 		45B541212885F85800DF6801 /* ImagesURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesURL.swift; sourceTree = "<group>"; };
 		45B541232885F87000DF6801 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		45BDA8F2288B0A2F0062CB08 /* ClassifiedAdEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassifiedAdEndpoint.swift; sourceTree = "<group>"; };
+		45BDA8F4288B0BA10062CB08 /* ClassifiedAdAPIServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassifiedAdAPIServiceProtocol.swift; sourceTree = "<group>"; };
+		45BDA8F6288B0C680062CB08 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		45BDA8F8288B0D070062CB08 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
+		45BDA8FB288B0D650062CB08 /* ClassifiedAdViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassifiedAdViewModel.swift; sourceTree = "<group>"; };
+		45BDA8FD288B0D730062CB08 /* ClassifiedAdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassifiedAdViewController.swift; sourceTree = "<group>"; };
+		45BDA8FF288B0D830062CB08 /* ClassifiedAdTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassifiedAdTableViewCell.swift; sourceTree = "<group>"; };
+		45BDA902288B0DFC0062CB08 /* ClassifiedAdDataRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassifiedAdDataRepository.swift; sourceTree = "<group>"; };
+		45D2A71D2888794700F178DA /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		45D2A71F28887C8E00F178DA /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		45D2A72628888A5B00F178DA /* ClassifiedAdRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassifiedAdRepository.swift; sourceTree = "<group>"; };
+		45D2A72828888B0A00F178DA /* FetchItemsUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchItemsUseCase.swift; sourceTree = "<group>"; };
+		45D2A72A28888B1600F178DA /* FetchCategoryUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchCategoryUseCase.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +134,56 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		456BA355288B5DDF006AE9A4 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				456BA356288B5DED006AE9A4 /* ViewState.swift */,
+				456BA366288B6251006AE9A4 /* LoadingView.swift */,
+				4591D4F9288CB71300C1B908 /* CellReusable.swift */,
+				45AA7EEE288F6E7100C41F17 /* Constants.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		456BA358288B5F1D006AE9A4 /* ProgressView */ = {
+			isa = PBXGroup;
+			children = (
+				456BA359288B5F39006AE9A4 /* ProgressShapeLayer.swift */,
+				456BA35B288B5F48006AE9A4 /* ProgressView.swift */,
+				456BA35D288B5F57006AE9A4 /* RotationAnimation.swift */,
+				456BA35F288B5F68006AE9A4 /* StrokeAnimation.swift */,
+				456BA361288B5F78006AE9A4 /* StrokeColorAnimation.swift */,
+			);
+			path = ProgressView;
+			sourceTree = "<group>";
+		};
+		456BA363288B6119006AE9A4 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				4591D501288CD1AF00C1B908 /* ImageLoader.swift */,
+				456BA364288B6126006AE9A4 /* UIView+Extension.swift */,
+				4591D4F7288CB28F00C1B908 /* UIColor+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		45AA7EEB288E9B8600C41F17 /* Filter */ = {
+			isa = PBXGroup;
+			children = (
+				45AA7EEC288E9F4700C41F17 /* FilterViewController.swift */,
+			);
+			path = Filter;
+			sourceTree = "<group>";
+		};
+		45AA7EF0288F6F1900C41F17 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				45AA7EF1288F6F2A00C41F17 /* ClassifiedAdDetailViewController.swift */,
+				45AA7EF3288F6F9200C41F17 /* ClassifiedAdDetailViewModel.swift */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
 		45B540DD2885EBCE00DF6801 = {
 			isa = PBXGroup;
 			children = (
@@ -106,13 +208,11 @@
 			isa = PBXGroup;
 			children = (
 				45B5411E2885F09E00DF6801 /* App */,
-				45B5411D2885F09000DF6801 /* Extensions */,
-				45B5411C2885F08900DF6801 /* Coordinator */,
-				45B5411B2885F08200DF6801 /* ViewModel */,
-				45B5411A2885F07400DF6801 /* View */,
-				45B541192885F06E00DF6801 /* Model */,
-				45B540ED2885EBCE00DF6801 /* ViewController.swift */,
-				45B540EF2885EBCE00DF6801 /* Main.storyboard */,
+				45D2A71B288878F600F178DA /* Domain */,
+				45D2A719288878E600F178DA /* Presentation */,
+				45D2A71A288878F000F178DA /* Data */,
+				45D2A718288878DE00F178DA /* CoreService */,
+				45D2A717288878D800F178DA /* Helpers */,
 				45B540F22885EBD000DF6801 /* Assets.xcassets */,
 				45B540F42885EBD000DF6801 /* LaunchScreen.storyboard */,
 				45B540F72885EBD000DF6801 /* Info.plist */,
@@ -137,44 +237,6 @@
 			path = ClassifiedAdsUITests;
 			sourceTree = "<group>";
 		};
-		45B541192885F06E00DF6801 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				45B5411F2885F5F000DF6801 /* ClassifiedAd.swift */,
-				45B541212885F85800DF6801 /* ImagesURL.swift */,
-				45B541232885F87000DF6801 /* Category.swift */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		45B5411A2885F07400DF6801 /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		45B5411B2885F08200DF6801 /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewModel;
-			sourceTree = "<group>";
-		};
-		45B5411C2885F08900DF6801 /* Coordinator */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Coordinator;
-			sourceTree = "<group>";
-		};
-		45B5411D2885F09000DF6801 /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Extensions;
-			sourceTree = "<group>";
-		};
 		45B5411E2885F09E00DF6801 /* App */ = {
 			isa = PBXGroup;
 			children = (
@@ -182,6 +244,126 @@
 				45B540EB2885EBCE00DF6801 /* SceneDelegate.swift */,
 			);
 			path = App;
+			sourceTree = "<group>";
+		};
+		45BDA8F0288B09F40062CB08 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				45BDA8F1288B0A080062CB08 /* ClassifiedAdAPI */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		45BDA8F1288B0A080062CB08 /* ClassifiedAdAPI */ = {
+			isa = PBXGroup;
+			children = (
+				45BDA8F2288B0A2F0062CB08 /* ClassifiedAdEndpoint.swift */,
+				45BDA8F4288B0BA10062CB08 /* ClassifiedAdAPIServiceProtocol.swift */,
+			);
+			path = ClassifiedAdAPI;
+			sourceTree = "<group>";
+		};
+		45BDA8FA288B0D4C0062CB08 /* ClassifiedAd */ = {
+			isa = PBXGroup;
+			children = (
+				45BDA8FB288B0D650062CB08 /* ClassifiedAdViewModel.swift */,
+				45BDA8FD288B0D730062CB08 /* ClassifiedAdViewController.swift */,
+				45BDA8FF288B0D830062CB08 /* ClassifiedAdTableViewCell.swift */,
+			);
+			path = ClassifiedAd;
+			sourceTree = "<group>";
+		};
+		45BDA901288B0DE20062CB08 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				45BDA902288B0DFC0062CB08 /* ClassifiedAdDataRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		45D2A717288878D800F178DA /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				456BA363288B6119006AE9A4 /* Extensions */,
+				456BA358288B5F1D006AE9A4 /* ProgressView */,
+				456BA355288B5DDF006AE9A4 /* Common */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		45D2A718288878DE00F178DA /* CoreService */ = {
+			isa = PBXGroup;
+			children = (
+				45D2A71C2888793700F178DA /* Network */,
+			);
+			path = CoreService;
+			sourceTree = "<group>";
+		};
+		45D2A719288878E600F178DA /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				45AA7EF0288F6F1900C41F17 /* Detail */,
+				45AA7EEB288E9B8600C41F17 /* Filter */,
+				45BDA8FA288B0D4C0062CB08 /* ClassifiedAd */,
+				45BDA8F6288B0C680062CB08 /* Coordinator.swift */,
+				45BDA8F8288B0D070062CB08 /* MainCoordinator.swift */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		45D2A71A288878F000F178DA /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				45BDA901288B0DE20062CB08 /* Repository */,
+				45BDA8F0288B09F40062CB08 /* Services */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		45D2A71B288878F600F178DA /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				45D2A723288884A500F178DA /* Repository */,
+				45D2A7222888849F00F178DA /* UseCases */,
+				45D2A7212888849900F178DA /* Entities */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		45D2A71C2888793700F178DA /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				45D2A71D2888794700F178DA /* Endpoint.swift */,
+				45D2A71F28887C8E00F178DA /* APIClient.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		45D2A7212888849900F178DA /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				45B5411F2885F5F000DF6801 /* ClassifiedAd.swift */,
+				45B541212885F85800DF6801 /* ImagesURL.swift */,
+				45B541232885F87000DF6801 /* Category.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		45D2A7222888849F00F178DA /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				45D2A72828888B0A00F178DA /* FetchItemsUseCase.swift */,
+				45D2A72A28888B1600F178DA /* FetchCategoryUseCase.swift */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		45D2A723288884A500F178DA /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				45D2A72628888A5B00F178DA /* ClassifiedAdRepository.swift */,
+			);
+			path = Repository;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -290,7 +472,6 @@
 			files = (
 				45B540F62885EBD000DF6801 /* LaunchScreen.storyboard in Resources */,
 				45B540F32885EBD000DF6801 /* Assets.xcassets in Resources */,
-				45B540F12885EBCE00DF6801 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -315,12 +496,39 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				45B540EE2885EBCE00DF6801 /* ViewController.swift in Sources */,
+				45D2A71E2888794700F178DA /* Endpoint.swift in Sources */,
+				456BA360288B5F68006AE9A4 /* StrokeAnimation.swift in Sources */,
+				45D2A72928888B0A00F178DA /* FetchItemsUseCase.swift in Sources */,
+				4591D502288CD1AF00C1B908 /* ImageLoader.swift in Sources */,
+				456BA35A288B5F3A006AE9A4 /* ProgressShapeLayer.swift in Sources */,
 				45B541242885F87000DF6801 /* Category.swift in Sources */,
+				45D2A72028887C8E00F178DA /* APIClient.swift in Sources */,
+				45AA7EF2288F6F2A00C41F17 /* ClassifiedAdDetailViewController.swift in Sources */,
 				45B541222885F85800DF6801 /* ImagesURL.swift in Sources */,
+				45BDA8F7288B0C680062CB08 /* Coordinator.swift in Sources */,
+				45AA7EEF288F6E7100C41F17 /* Constants.swift in Sources */,
 				45B541202885F5F000DF6801 /* ClassifiedAd.swift in Sources */,
+				456BA35E288B5F57006AE9A4 /* RotationAnimation.swift in Sources */,
+				45BDA8FE288B0D730062CB08 /* ClassifiedAdViewController.swift in Sources */,
+				456BA367288B6251006AE9A4 /* LoadingView.swift in Sources */,
+				456BA357288B5DED006AE9A4 /* ViewState.swift in Sources */,
+				45BDA8F5288B0BA10062CB08 /* ClassifiedAdAPIServiceProtocol.swift in Sources */,
+				456BA35C288B5F48006AE9A4 /* ProgressView.swift in Sources */,
 				45B540EA2885EBCE00DF6801 /* AppDelegate.swift in Sources */,
+				45D2A72728888A5B00F178DA /* ClassifiedAdRepository.swift in Sources */,
+				45D2A72B28888B1600F178DA /* FetchCategoryUseCase.swift in Sources */,
 				45B540EC2885EBCE00DF6801 /* SceneDelegate.swift in Sources */,
+				45BDA903288B0DFC0062CB08 /* ClassifiedAdDataRepository.swift in Sources */,
+				4591D4FA288CB71300C1B908 /* CellReusable.swift in Sources */,
+				45BDA8F9288B0D070062CB08 /* MainCoordinator.swift in Sources */,
+				456BA362288B5F78006AE9A4 /* StrokeColorAnimation.swift in Sources */,
+				45AA7EED288E9F4700C41F17 /* FilterViewController.swift in Sources */,
+				45BDA8FC288B0D650062CB08 /* ClassifiedAdViewModel.swift in Sources */,
+				45BDA8F3288B0A2F0062CB08 /* ClassifiedAdEndpoint.swift in Sources */,
+				456BA365288B6126006AE9A4 /* UIView+Extension.swift in Sources */,
+				4591D4F8288CB28F00C1B908 /* UIColor+Extensions.swift in Sources */,
+				45AA7EF4288F6F9200C41F17 /* ClassifiedAdDetailViewModel.swift in Sources */,
+				45BDA900288B0D830062CB08 /* ClassifiedAdTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -357,14 +565,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		45B540EF2885EBCE00DF6801 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				45B540F02885EBCE00DF6801 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		45B540F42885EBD000DF6801 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -502,7 +702,6 @@
 				INFOPLIST_FILE = ClassifiedAds/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -531,7 +730,6 @@
 				INFOPLIST_FILE = ClassifiedAds/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
