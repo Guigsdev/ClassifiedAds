@@ -20,7 +20,6 @@ class ClassifiedAdTableViewCell: UITableViewCell, CellReusable {
         let img = UIImageView()
         img.contentMode = .scaleAspectFill
         img.translatesAutoresizingMaskIntoConstraints = false
-        img.layer.cornerRadius = 35
         img.clipsToBounds = true
         return img
     }()
@@ -35,7 +34,7 @@ class ClassifiedAdTableViewCell: UITableViewCell, CellReusable {
 
     let titleLabel: UILabel = {
         let label = UILabel()
-        label.font = UIFont.boldSystemFont(ofSize: 15)
+        label.font = Fonts.List.title
         label.textColor = .black
         label.numberOfLines = 2
         label.translatesAutoresizingMaskIntoConstraints = false
@@ -44,9 +43,9 @@ class ClassifiedAdTableViewCell: UITableViewCell, CellReusable {
 
     let categoryLabel: UILabel = {
         let label = UILabel()
-        label.font = UIFont.boldSystemFont(ofSize: 14)
+        label.font = Fonts.List.category
         label.textColor =  .white
-        label.backgroundColor = #colorLiteral(red: 0.1764705926, green: 0.4980392158, blue: 0.7568627596, alpha: 1)
+        label.backgroundColor = .orange
         label.layer.cornerRadius = 5
         label.clipsToBounds = true
         label.translatesAutoresizingMaskIntoConstraints = false
@@ -55,7 +54,7 @@ class ClassifiedAdTableViewCell: UITableViewCell, CellReusable {
 
     let priceLabel: UILabel = {
         let label = UILabel()
-        label.font = UIFont.systemFont(ofSize: 14, weight: .medium)
+        label.font = Fonts.List.price
         label.textColor = .black
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
@@ -63,6 +62,10 @@ class ClassifiedAdTableViewCell: UITableViewCell, CellReusable {
 
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
+        let backgroundView = UIView()
+        backgroundView.backgroundColor = .orange
+        selectedBackgroundView = backgroundView
+
         self.contentView.addSubview(adImageView)
         containerView.addSubview(titleLabel)
         containerView.addSubview(categoryLabel)

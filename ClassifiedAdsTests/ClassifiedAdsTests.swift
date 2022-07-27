@@ -10,27 +10,47 @@ import XCTest
 
 class ClassifiedAdsTests: XCTestCase {
 
+    let testAdsMockFileName = "TestAds"
+    let testCategoriesMockFileName = "TestCategories"
+    let testFileType = "json"
+
+    var decoder: JSONDecoder!
+    var adsData: Data!
+    var categoriesData: Data!
+
     override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+        let adsMockURL = Bundle.main.url(forResource: testAdsMockFileName, withExtension: testFileType)!
+        let categoriesMockURL = Bundle.main.url(forResource: testCategoriesMockFileName, withExtension: testFileType)!
+        do {
+            adsData = try Data(contentsOf: adsMockURL)
+            categoriesData = try Data(contentsOf: categoriesMockURL)
+        } catch {
+            throw error
+        }
+        decoder = JSONDecoder()
     }
 
     override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+        adsData = nil
+        categoriesData = nil
     }
 
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-        // Any test you write for XCTest can be annotated as throws and async.
-        // Mark your test throws to produce an unexpected failure when your test encounters an uncaught error.
-        // Mark your test async to allow awaiting for asynchronous code to complete. Check the results with assertions afterwards.
-    }
-
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
+    func testDecodingListings() throws {
+        decoder.dateDecodingStrategy = .iso8601
+        do {
+            let ads = try decoder.decode([ClassifiedAds.ClassifiedAd].self, from: adsData)
+            XCTAssertNotEqual(ads.count, 0)
+        } catch {
+            throw error
         }
     }
 
+    func testDecodingCategories() throws {
+        do {
+            let categories = try decoder.decode([ClassifiedAds.Category].self, from: categoriesData)
+            XCTAssertNotEqual(categories.count, 0)
+        } catch {
+            throw error
+        }
+    }
 }

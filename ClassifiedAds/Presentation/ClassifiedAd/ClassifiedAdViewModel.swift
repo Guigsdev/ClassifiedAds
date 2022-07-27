@@ -35,15 +35,6 @@ final class ClassifiedAdViewModel {
 
     var selectedCategory: Category?
 
-//    var defaultFilters: Category? {
-//        return nil
-//    }
-
-    var newsListTitle: String {
-        //selectedFilters?.1 == .allNews ? "All News" : selectedFilters?.1.rawValue ?? "All News"
-        return ""
-    }
-
     init(fetchItemsUseCase: FetchItemsUseCase,
          fetchCategoriesUseCase: FetchCategoriesUseCase) {
         self.fetchItemsUseCase = fetchItemsUseCase
@@ -62,7 +53,6 @@ final class ClassifiedAdViewModel {
                 if case .failure(let error) = completion {
                     print("error: \(error)")
                     self.state = .error(message: ViewModelError.faildItemsLoading.message)
-
                 }
             } receiveValue: { newItems, categories in
                 guard let receivedItems = newItems,

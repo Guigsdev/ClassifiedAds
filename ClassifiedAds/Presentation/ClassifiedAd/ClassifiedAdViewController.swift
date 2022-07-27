@@ -9,7 +9,7 @@ import Foundation
 import UIKit
 import Combine
 
-class ClassifiedAdViewController: UIViewController, UITableViewDelegate {
+class ClassifiedAdViewController: UIViewController, UITableViewDelegate, Alertable {
 
     private let viewModel: ClassifiedAdViewModel
     private var coordinator: MainCoordinator
@@ -27,10 +27,10 @@ class ClassifiedAdViewController: UIViewController, UITableViewDelegate {
         return loadingView
     }()
 
+    /// The initializer.
     init(viewModel: ClassifiedAdViewModel, coordinator: MainCoordinator) {
         self.viewModel = viewModel
         self.coordinator = coordinator
-
         super.init(nibName: nil, bundle: nil)
         bindUI()
     }
@@ -81,11 +81,11 @@ class ClassifiedAdViewController: UIViewController, UITableViewDelegate {
             loadingView.show()
         case .error(let message):
             loadingView.hide()
+            showAlert(message: message)
         case .success:
             loadingView.hide()
         }
     }
-
 
     // MARK: - View Lifecycle
     override func viewDidLoad() {
@@ -95,10 +95,18 @@ class ClassifiedAdViewController: UIViewController, UITableViewDelegate {
         configureTableView()
         viewModel.fetch()
     }
+
+    override func viewWillAppear(_ animated: Bool) {
+        // deselect the last selected row when back from item detail
+        if let index = self.itemsTableView.indexPathForSelectedRow{
+            self.itemsTableView.deselectRow(at: index, animated: true)
+        }
+    }
 }
 
 extension ClassifiedAdViewController {
 
+    /// Configure nav bar buttons
     private func setupNavigationBarButtons() {
         let filterBarButtonItem = UIBarButtonItem(image: UIImage(named: Icons.filterIcon.rawValue),
                                                   style: .plain,
@@ -134,12 +142,12 @@ extension ClassifiedAdViewController {
     }
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-            tableView.isUserInteractionEnabled = false
-            DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) {
-                guard let item = self.dataSource.itemIdentifier(for: indexPath) else { return }
-                self.coordinator.displayItemDetail(with: item)
-                tableView.isUserInteractionEnabled = true
-            }
+        tableView.isUserInteractionEnabled = false
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) {
+            guard let item = self.dataSource.itemIdentifier(for: indexPath) else { return }
+            self.coordinator.displayItemDetail(with: item)
+            tableView.isUserInteractionEnabled = true
+        }
     }
 
     // MARK: - Actions
